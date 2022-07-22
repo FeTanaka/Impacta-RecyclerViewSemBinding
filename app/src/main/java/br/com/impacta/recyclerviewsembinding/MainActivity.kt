@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
 
         val adapter = AndroidVersionAdapter(AndroidVersionList)
-        recyclerView?.layoutManager = Line(2, RecyclerView.VERTICAL)
+        recyclerView?.layoutManager = LinearLayoutManager(this)
         recyclerView?.adapter = adapter
     }
 }
